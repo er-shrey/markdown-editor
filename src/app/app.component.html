@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="https://github.com/er-shrey/markdown-editor">
+            <i class="fa fa-github"></i>
+            <span>{{title}}</span>
+        </a>
+    </div>
+</nav>
+
+<div class="body-content" [ngStyle]="{'height':height+'px' }">
+    <router-outlet></router-outlet>
+</div>

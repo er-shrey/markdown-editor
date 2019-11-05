@@ -1,0 +1,14 @@
+<form [formGroup]="templateForm" novalidate class="col-md-6 separated1">
+    <div class="editor">
+        <angular-markdown-editor textareaId="editor1" [options]="editorOptions" formControlName="body">
+        </angular-markdown-editor>
+    </div>
+</form>
+
+<form [formGroup]="templateForm" novalidate class="col-md-6 separated2">
+    <div class="result-preview outline">
+        <markdown [data]="markdownText"></markdown>
+    </div>
+</form>
+
+
